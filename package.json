@@ -1,6 +1,6 @@
 {
   "name": "react-select-brasil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cria campo de seleção para React com temáticas trabalhadas no Brasil",
   "main": "lib/index.js",
   "module": "es/index.js",
