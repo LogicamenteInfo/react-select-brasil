@@ -2,7 +2,6 @@
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
 Este é um Component React que cria um campo de seleção com temáticas trabalhadas no Brasil.
 
@@ -93,9 +92,6 @@ $ yarn build # Gera os módulos para distribuição
 
 [npm-badge]: https://img.shields.io/npm/v/react-select-brasil.png?style=flat-square
 [npm]: https://www.npmjs.org/natanaelsimoes/react-select-brasil
-
-[coveralls-badge]: https://img.shields.io/coveralls/natanaelsimoes/react-select-brasil/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/natanaelsimoes/react-select-brasil
 
 [react-select]: https://react-select.com
 [react-select-props]: https://react-select.com/props
