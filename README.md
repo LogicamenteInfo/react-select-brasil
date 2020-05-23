@@ -6,7 +6,7 @@
 
 Este é um Component React que cria um campo de seleção com temáticas trabalhadas no Brasil.
 
-Para ver este projeto funcionando, faça o download e execute `index.html` que esta dentro de `/demo/dist/index.html`.
+Para ver este projeto funcionando, faça o download e execute `yarn start`.
 
 ## Instalação
 
@@ -26,7 +26,7 @@ export default class Demo extends React.Component {
     return (
       <SelectBrasil.CategoriaCNH
         value={this.state.categoria}
-        onChange={(e) => this.setState({ categoria: e })}>
+        onChange={(e) => this.setState({ categoria: e ? e.value : null })}>
     );
   }
 }
@@ -61,18 +61,20 @@ Este componente utiliza a versão síncrona do react-select e suas opções não
 
 ## Como criar meus próprios selects
 
-Para criar selects com suas próprias opções, crie uma classe que extenda `CommonSelect` e defina as opções no estado da classe. Sério, é só isso mesmo.
+Para criar selects com suas próprias opções, crie uma classe que extenda `CommonSelect` e defina as opções no estado da classe através de uma variável estática `options` (obrigatória). Sério, é só isso mesmo.
 
 ```js
 import SelectBrasil from 'react-select-brasil';
 
 export default class MeuSelect extends SelectBrasil.CommonSelect {
+  static options = [
+    { value: '1', label: 'Um' },
+    { value: '2', label: 'Um' },
+    { value: '3', label: 'Três' }
+  ];
+
   state = {
-    options: [
-      { value: '1', label: 'Um' },
-      { value: '2', label: 'Um' },
-      { value: '3', label: 'Três' }
-    ]
+    options: MeuSelect.options
   }
 }
 ```

@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
+import _ from 'lodash';
 
 export default class CommonSelect extends Component {
+  static options = {};
+
+  componentDidUpdate(pProps) {
+    if (this.props.value !== pProps.value) {
+      typeof this.props.value === 'object' ?
+        this.setState({ value: this.props.value }) :
+        this.setState({ value: _.find(this.constructor.options, (o) => o.value === this.props.value) });
+    }
+  }
+
   render() {
     return React.createElement(Select, {
+      ...this.props,
       options: this.state.options,
-      ...this.props
+      value: this.state.value
     });
   }
 }
