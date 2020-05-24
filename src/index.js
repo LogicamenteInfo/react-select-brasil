@@ -1,4 +1,5 @@
 import CommonSelect from "./Components/_CommonSelect";
+import Bancos from "./Components/Bancos";
 import CategoriasCNH from "./Components/CategoriasCNH";
 import Cidades from "./Components/Cidades";
 import Estados from "./Components/Estados";
@@ -10,6 +11,7 @@ import Racas from "./Components/Racas";
 
 export default {
   CommonSelect,
+  Bancos,
   CategoriasCNH,
   Cidades,
   Estados,

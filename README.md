@@ -36,6 +36,7 @@ export default class Demo extends React.Component {
 | Componente | Temática |
 | :-- | :-- |
 | `SelectBrasil.CommonSelect` | Componente base para a criação de novos componentes de seleção, não é possível renderizar este componente diretamente |
+| `SelectBrasil.Bancos` | Exibe seleção de bancos existentes no Brasil, sendo o valor resultante o código do banco |
 | `SelectBrasil.CategoriasCNH` | Exibe seleção de categorias de carteira de habilitação A, B, AB, C, D e E |
 | `SelectBrasil.Cidades` | Exibe seleção de cidades para um dado estado. Este componente possui uma propriedade obrigatória `estado` que deve receber a **sigla do estado** das cidades a serem exibidas |
 | `SelectBrasil.Estados` | Exibe seleção dos estados brasileiros |

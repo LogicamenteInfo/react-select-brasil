@@ -44,6 +44,17 @@ export default class Demo extends Component {
           <small>Você selecionou {this.state.cnh}</small>
         </pre>}
 
+      <label><b>Banco</b></label>
+      <SelectBrasil.Bancos
+        placeholder="Selecione um banco..."
+        value={this.state.banco}
+        onChange={(e) => this.setState({ banco: e ? e.value : null })}
+      />
+      {this.state.banco
+        && <pre>
+          <small>Você selecionou {this.state.banco}</small>
+        </pre>}
+
     </div>
   }
 }
