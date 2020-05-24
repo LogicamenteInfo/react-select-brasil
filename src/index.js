@@ -6,6 +6,7 @@ import EstadosCivis from "./Components/EstadosCivis";
 import Generos from "./Components/Generos";
 import GrausInstrucao from "./Components/GrausInstrucao";
 import Nacionalidades from "./Components/Nacionalidades";
+import Racas from "./Components/Racas";
 
 export default {
   CommonSelect,
@@ -15,5 +16,6 @@ export default {
   EstadosCivis,
   Generos,
   GrausInstrucao,
-  Nacionalidades
+  Nacionalidades,
+  Racas
 };
