@@ -8,6 +8,7 @@ import Generos from "./Components/Generos";
 import GrausInstrucao from "./Components/GrausInstrucao";
 import Nacionalidades from "./Components/Nacionalidades";
 import Racas from "./Components/Racas";
+import UnidadesMedida from "./Components/UnidadesMedida";
 
 export default {
   CommonSelect,
@@ -19,5 +20,6 @@ export default {
   Generos,
   GrausInstrucao,
   Nacionalidades,
-  Racas
+  Racas,
+  UnidadesMedida
 };

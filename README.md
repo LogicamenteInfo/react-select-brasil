@@ -45,6 +45,7 @@ export default class Demo extends React.Component {
 | `SelectBrasil.GrausInstrucao` | Exibe seleção de graus de instrução escolares (médio, superior...) |
 | `SelectBrasil.Nacionalidades` | Exibe seleção de nacionalidades, isto é, o país de origem de uma pessoa (brasileiro, canadense, tibetano...) |
 | `SelectBrasil.Racas` | Exibe seleção de raças e cores conforme os valores esperados pelo IBGE (branca, parda, preta...) |
+| `SelectBrasil.UnidadesMedida` | Exibe seleção de unidades de medida conforme necessário em notas fiscais |
 
 
 ## Retorno do onChange
