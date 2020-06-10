@@ -5631,9 +5631,14 @@ export default class Cidades extends CommonSelect {
     return cidades ?? noState;
   }
 
+  componentDidMount() {
+    this.setState({ value: _.find(this.state.options, (o) => o.value === this.props.value) });
+  }
+
   componentDidUpdate(pProps) {
     if (this.props.estado !== pProps.estado) {
       this.setState({ options: this.carregarCidades() });
+      console.log(this.props.value, pProps.value)
       this.props.onChange(null);
     }
   }

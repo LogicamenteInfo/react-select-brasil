@@ -5,6 +5,10 @@ import _ from 'lodash';
 export default class CommonSelect extends Component {
   static options = {};
 
+  componentDidMount() {
+    this.setState({ value: _.find(this.constructor.options, (o) => o.value === this.props.value) });
+  }
+
   componentDidUpdate(pProps) {
     if (this.props.value !== pProps.value) {
       typeof this.props.value === 'object' ?
@@ -14,6 +18,7 @@ export default class CommonSelect extends Component {
   }
 
   render() {
+    console.log(this.state.value)
     return React.createElement(Select, {
       ...this.props,
       options: this.state.options,
