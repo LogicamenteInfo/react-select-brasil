@@ -18,7 +18,6 @@ export default class CommonSelect extends Component {
   }
 
   render() {
-    console.log(this.state.value)
     return React.createElement(Select, {
       ...this.props,
       options: this.state.options,
