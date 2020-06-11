@@ -1,6 +1,6 @@
 {
-  "name": "react-select-brasil",
-  "version": "1.0.8",
+  "name": "@logicamente.info/react-select-brasil",
+  "version": "1.0.9",
   "description": "Cria campo de seleção para React com temáticas trabalhadas no Brasil",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -30,12 +30,13 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
+  "author": "Logicamente Info",
+  "homepage": "https://logicamente.info",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/natanaelsimoes/react-select-brasil"
+    "url": "https://github.com/logicamenteinfo/react-select-brasil.git"
   },
-  "author": "Natanael Simões",
-  "license": "MIT",
   "keywords": [
     "select",
     "brasil",

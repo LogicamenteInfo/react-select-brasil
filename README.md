@@ -89,11 +89,11 @@ $ yarn start # Inicia a aplicação rodando o especificado em `./demo/src/index.
 $ yarn build # Gera os módulos para distribuição
 ```
 
-[build-badge]: https://img.shields.io/travis/natanaelsimoes/react-select-brasil/master.png?style=flat-square
-[build]: https://travis-ci.org/natanaelsimoes/react-select-brasil
+[build-badge]: https://img.shields.io/travis/logicamenteinfo/react-select-brasil/master.png?style=flat-square
+[build]: https://travis-ci.org/logicamenteinfo/react-select-brasil
 
-[npm-badge]: https://img.shields.io/npm/v/react-select-brasil.png?style=flat-square
-[npm]: https://www.npmjs.org/natanaelsimoes/react-select-brasil
+[npm-badge]: https://img.shields.io/npm/v/@logicamente.info/react-select-brasil.png?style=flat-square
+[npm]: https://www.npmjs.org/@logicamente.info/react-select-brasil
 
 [react-select]: https://react-select.com
 [react-select-props]: https://react-select.com/props
