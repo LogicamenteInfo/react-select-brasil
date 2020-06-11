@@ -10,8 +10,8 @@ Para ver este projeto funcionando, faça o download e execute `yarn start`.
 ## Instalação
 
 ```bash
-$ npm i -S react-select-brasil # NPM user
-$ yarn add react-select-brasil # YARN user
+$ npm i -S @logicamente.info/react-select-brasil # NPM user
+$ yarn add @logicamente.info/react-select-brasil # YARN user
 ```
 
 ## Uso
