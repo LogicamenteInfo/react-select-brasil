@@ -65,7 +65,7 @@ Este componente utiliza a versão síncrona do react-select e suas opções não
 Para criar selects com suas próprias opções, crie uma classe que extenda `CommonSelect` e defina as opções no estado da classe através de uma variável estática `options` (obrigatória). Sério, é só isso mesmo.
 
 ```js
-import SelectBrasil from 'react-select-brasil';
+import SelectBrasil from '@logicamente.info/react-select-brasil';
 
 export default class MeuSelect extends SelectBrasil.CommonSelect {
   static options = [
