@@ -18,7 +18,7 @@ $ yarn add @logicamente.info/react-select-brasil # YARN user
 
 ```js
 import React from 'react';
-import SelectBrasil from 'react-select-brasil';
+import SelectBrasil from '@logicamente.info/react-select-brasil';
 
 export default class Demo extends React.Component {
   render() {
