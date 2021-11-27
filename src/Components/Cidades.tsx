@@ -1,6 +1,8 @@
 import { CommonSelect, SelectProps } from "./CommonSelect";
 
-type SelectCidadesProp = SelectProps & { estado?: keyof typeof Brasil | null };
+export type EstadosProps = keyof typeof Brasil;
+
+type SelectCidadesProp = SelectProps & { estado?: EstadosProps | null };
 
 export const Cidades = ({ estado, ...props }: SelectCidadesProp) => {
   const options = estado

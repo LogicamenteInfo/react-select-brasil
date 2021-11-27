@@ -10,6 +10,8 @@ import { Nacionalidades } from "./Components/Nacionalidades";
 import { Racas } from "./Components/Racas";
 import { UnidadesMedida } from "./Components/UnidadesMedida";
 
+export type { EstadosProps } from "./Components/Cidades";
+
 export default {
   CommonSelect,
   Bancos,

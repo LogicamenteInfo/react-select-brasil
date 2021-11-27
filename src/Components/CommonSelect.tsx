@@ -6,7 +6,12 @@ export interface Option {
   label: string;
 }
 
-type InternalSelectProps = Props<Option, false, GroupBase<Option>>;
+type InternalSelectProps = Omit<
+  Props<Option, false, GroupBase<Option>>,
+  "value"
+> & {
+  value?: string | null;
+};
 
 export type SelectProps = Omit<InternalSelectProps, "options">;
 

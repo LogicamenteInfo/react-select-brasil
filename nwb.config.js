@@ -7,7 +7,7 @@ module.exports = {
   },
   webpack: {
     extra: {
-      entry: "./src/index.ts",
+      entry: "./demo/src/index.tsx",
       resolve: {
         extensions: [".js", ".ts", ".tsx"],
       },
