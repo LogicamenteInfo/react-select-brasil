@@ -10,6 +10,7 @@ import { Nacionalidades } from "./Components/Nacionalidades";
 import { Racas } from "./Components/Racas";
 import { UnidadesMedida } from "./Components/UnidadesMedida";
 
+export type { SelectProps } from "./Components/CommonSelect";
 export type { EstadosProps } from "./Components/Cidades";
 
 export default {
