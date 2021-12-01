@@ -5,7 +5,9 @@ import SelectBrasil from "../../src";
 
 export default function Demo() {
   const [estado, setEstado] = useState(null);
+  const [estadoIbge, setEstadoIbge] = useState<number>(0);
   const [cidade, setCidade] = useState(null);
+  const [cidadeIbge, setCidadeIbge] = useState<number>(0);
   const [cnh, setCnh] = useState(null);
   const [banco, setBanco] = useState(null);
 
@@ -19,11 +21,14 @@ export default function Demo() {
       <SelectBrasil.Estados
         placeholder="Selecione um estado..."
         value={estado}
-        onChange={(e) => setEstado(e?.value)}
+        onChange={(e) => {
+          setEstado(e?.value);
+          setEstadoIbge(e?.ibge ?? 0);
+        }}
       />
       {estado && (
         <pre>
-          <small>Você selecionou {estado}</small>
+          <small>Você selecionou {estado} (Código IBGE: {estadoIbge})</small>
         </pre>
       )}
 
@@ -34,11 +39,14 @@ export default function Demo() {
         placeholder="Selecione uma cidade..."
         estado={estado}
         value={cidade}
-        onChange={(e) => setCidade(e?.value)}
+        onChange={(e) => {
+          setCidade(e?.value);
+          setCidadeIbge(e?.ibge ?? 0);
+        }}
       />
       {cidade && (
         <pre>
-          <small>Você selecionou {cidade}</small>
+          <small>Você selecionou {cidade} (Código IBGE: {cidadeIbge})</small>
         </pre>
       )}
 
