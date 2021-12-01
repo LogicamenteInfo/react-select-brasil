@@ -19,5 +19,5 @@ export const CommonSelect = (props: InternalSelectProps) => {
   const value = props.value !== undefined && props.value !== null
     ? props.options?.find((o) => (o as Option).value === props.value)
     : null;
-  return <Select isClearable={true} {...props} value={value as Option} />;
+  return <Select noOptionsMessage={() => "Sem opções"} isClearable={true} {...props} value={value as Option} />;
 };
