@@ -91,7 +91,7 @@ $ yarn start # Inicia a aplicação rodando o especificado em `./demo/src/index.
 $ yarn build # Gera os módulos para distribuição
 ```
 
-[workflow]: https://github.com/logicamenteinfo/react-select-brasil/actions/workflows/ci.yml/badge.svg)
+[workflow]: https://github.com/logicamenteinfo/react-select-brasil/actions/workflows/ci.yml/badge.svg
 [npm-badge]: https://img.shields.io/npm/v/@logicamente.info/react-select-brasil.png?style=flat-square
 [npm]: https://www.npmjs.org/@logicamente.info/react-select-brasil
 [react-select]: https://react-select.com
